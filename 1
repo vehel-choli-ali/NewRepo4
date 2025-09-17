@@ -1,0 +1,17 @@
+
+        Console.Write("Skriv inn et tall: ");
+        string input = Console.ReadLine();
+
+        if (int.TryParse(input, out int tall))
+        {
+            if (tall > 10)
+            {
+                Console.WriteLine("Tallet er stort");
+            }
+            else
+            {
+                Console.WriteLine("Tallet er ikke stort");
+            }
+
+    }
+}
