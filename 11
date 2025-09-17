@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int number = -5; // Example input
+        string result = GetNumberType(number);
+        Console.WriteLine(result);
+    }
+
+    static string GetNumberType(int number)
+    {
+        if (number > 0)
+        {
+            return "Positiv";
+        }
+        else if (number < 0)
+        {
+            return "Negativ";
+        }
+        else
+        {
+            return "Null";
+        }
+    }
+}
