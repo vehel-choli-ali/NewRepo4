@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        var numbers = new List<int> { 5, 12, 3, 9, 21, 7 };
+        int largest = FinnStorsteTall(numbers);
+        Console.WriteLine($"Største tall: {largest}");
+    }
+
+    static int FinnStorsteTall(List<int> tallListe)
+    {
+        int storste = tallListe[0];
+        foreach (int tall in tallListe)
+        {
+            if (tall > storste)
+                storste = tall;
+        }
+        return storste;
+    }
+}
