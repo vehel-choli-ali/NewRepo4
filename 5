@@ -1,0 +1,14 @@
+Console.Write("Skriv inn et tall: ");
+if (int.TryParse(Console.ReadLine(), out int tall))
+{
+    if (tall > 0)
+        Console.WriteLine("Tallet er positivt");
+    else if (tall < 0)
+        Console.WriteLine("Tallet er negativt");
+    else
+        Console.WriteLine("Tallet er null");
+}
+else
+{
+    Console.WriteLine("Ugyldig input.");
+}
